@@ -1,0 +1,95 @@
+/* default styles for all screen sizes */
+body {
+    background-color: whitesmoke;
+}
+
+.box {
+    background-color: green;
+    width: 500px;
+    height: 200px;
+    margin-left: 490px;
+    margin-top: 240px;
+}
+
+.write {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    color: white;
+}
+
+.write:hover {
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.ho {
+    background-color: salmon;
+    color: burlywood;
+}
+
+.ho:hover {
+    width: 100px;
+    height: 40px;
+}
+
+.para {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+/* media query for screens with width less than or equal to 768px */
+@media screen and (max-width: 768px) {
+    .box {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .write {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .ho {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    
+    .ho:hover {
+        width: 80px;
+        height: 30px;
+    }
+    
+    .para {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* media query for screens with width less than or equal to 576px */
+@media screen and (max-width: 576px) {
+    .write {
+        font-size: 1rem;
+    }
+    
+    .ho {
+        font-size: 0.75rem;
+    }
+    
+    .ho:hover {
+        width: 60px;
+        height: 25px;
+    }
+    
+    .para {
+        font-size: 0.75rem;
+    }
+}
